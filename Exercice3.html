@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="agg"></p>
+    <script>
+        let age1 = parseInt(prompt("Donnez votre age"));
+        let nbj1= age1 * 365
+        let age2 = parseInt(prompt("Donnez l'age visé"));
+        let nbjj1= age2-age1;
+        let nbjjj1= nbjj1 * 365
+        document.getElementById("agg").innerHTML= `Vous avez vecu ${nbj1}! Il y'a encore${nbjjj1} jours avant vos ${age2} ans.`;
+    </script>
+</body>
+</html>

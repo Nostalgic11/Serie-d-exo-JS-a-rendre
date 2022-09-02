@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <button onclick="choisir()">Veuillez-cliquer!</button>
+    <p id="para"></p>
+    <script>
+        img.src = "bg.jpg";
+        
+        function choisir(){
+
+             var result = confirm("Do you want to continue?");
+
+             if(result)  {
+                 open("bg.jpg");
+             } else {
+                document.getElementById("para").innerHTML=`Ceci est un Text Lorem ipsum dolor <br>
+                                                            sit amet consectetur <br>
+                                                            adipisicing elit. Ad, amet <br>
+                                                            dicta ex dolorem corporis sunt <br>
+                                                            qui nemo quae adipisci nulla asperiores possimus <br>
+                                                            voluptatum quo ab enim. Quisquam<br>
+                                                            possimus consectetur quibusdam?`;
+             }
+        }
+
+     </script>
+
+</body>
+</html>
